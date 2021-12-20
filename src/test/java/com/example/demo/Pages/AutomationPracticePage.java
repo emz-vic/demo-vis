@@ -1,10 +1,10 @@
 package com.example.demo.Pages;
 
-import com.example.demo.Utils.BaseTest;
+import com.example.demo.Utils.BaseUiTest;
 import com.example.demo.Utils.Util;
 import org.openqa.selenium.By;
 
-public class AutomationPracticePage extends BaseTest {
+public class AutomationPracticePage extends BaseUiTest {
     public static void clickAlertElementButton() {
         getDriver().findElement(By.linkText("Alert")).click();
         Util.waitForPageToLoad();

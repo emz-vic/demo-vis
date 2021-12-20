@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 
 
-public class BaseTest {
+public class BaseUiTest {
     private static ChromeDriver driver;
     private static Logger log = LoggerFactory.getLogger("BaseTest");
 
@@ -21,7 +21,7 @@ public class BaseTest {
         return driver;
     }
 
-    @Before
+    @Before("@UiTest")
     public void setUp(){
         File file = new File("src/test/java/com/example/demo/Utils/chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", file.getPath());
@@ -43,7 +43,7 @@ public class BaseTest {
         driver = new ChromeDriver(options);
     }
 
-    @After
+    @After("@UiTest")
     public void tearDown(){
         driver.quit();
     }

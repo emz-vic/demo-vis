@@ -16,11 +16,11 @@ import org.testng.Assert;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+
 
 @CucumberContextConfiguration
 @SpringBootTest
-public class StepDefinitions {
+public class UiStepDefinitions {
 
     private ScenarioContext context = new ScenarioContext();
 

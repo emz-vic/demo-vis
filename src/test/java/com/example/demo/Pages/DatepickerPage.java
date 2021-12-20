@@ -1,6 +1,6 @@
 package com.example.demo.Pages;
 
-import com.example.demo.Utils.BaseTest;
+import com.example.demo.Utils.BaseUiTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -18,18 +18,13 @@ import java.time.LocalDate;
 import java.util.List;
 
 import static com.example.demo.Utils.Util.switchToDemoIframe;
-import static com.example.demo.Utils.Util.waitForPageToLoad;
 
 
-public class DatepickerPage extends BaseTest {
+public class DatepickerPage extends BaseUiTest {
     static WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 
     public static WebElement getDatepickerInput(){
         return getDriver().findElement(By.id("datepicker"));
-    }
-
-    public static WebElement getDatepickerElement(){
-        return getDriver().findElement(By.id("ui-datepicker-div"));
     }
 
     public static WebElement getDatepickerCalendar (){

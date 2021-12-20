@@ -1,6 +1,6 @@
 Feature: Test UI for input and date picker
 
-
+  @UiTest
   Scenario: Test input
     Given I navigate to automation practice site
     When I navigate to Alert category
@@ -8,6 +8,7 @@ Feature: Test UI for input and date picker
     And I enter my name in the input
     Then my name appears in the message
 
+  @UiTest
   Scenario: Test datepicker
     Given I navigate to automation practice site
     When I navigate to Datepicker category

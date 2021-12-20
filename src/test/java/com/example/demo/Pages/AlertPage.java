@@ -1,7 +1,6 @@
 package com.example.demo.Pages;
 
-import com.example.demo.Utils.BaseTest;
-import com.example.demo.Utils.Util;
+import com.example.demo.Utils.BaseUiTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +9,7 @@ import static com.example.demo.Utils.Util.switchToDemoIframe;
 import static com.example.demo.Utils.Util.waitForPageToLoad;
 
 
-public class AlertPage extends BaseTest {
+public class AlertPage extends BaseUiTest {
     static WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 
     public static void clickInputAlert() {
